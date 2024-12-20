@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  header .logo img {
+    max-width: 100%;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  main {
+    padding: 20px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .content .text {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .content .image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer .social-media li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .social-media li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content {
+      grid-template-columns: 1fr;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    header {
+      flex-direction: row;
+    }
+  
+    .content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    header {
+      flex-direction: row;
+    }
+  
+    .content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header nav ul {
+      transition: all 0.3s ease;
+    }
+  
+    header nav ul li {
+      transition: all 0.3s ease;
+    }
+  }
+  
